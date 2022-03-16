@@ -1,6 +1,130 @@
-h1{
+html{
+    overflow-x: hidden;
+}
+body{
+    margin: 0;
+}
+h1,h2{
     color: #1F3E72;
+}
+h3{
+    color: #2C4CCA;
 }
 p{
     color: #7f8ca1;
+}
+.button{
+    min-height: 40px;
+    color: #FFFF;
+    background-color: #2C4CCA;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(44, 76, 202, 0.2);
+}
+main{
+    background-image: url("../images/doctorHeader.jpg");
+    background-size: cover;
+    background-position-x: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.barHeader{
+    position: sticky;
+    top: 0px;
+    grid-column: 1/3;
+    grid-row: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.barHeader p{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #2C4CCA;
+}
+.barHeader ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+
+}
+.barHeader li{
+    color: #7f8ca1;
+    margin: 10px;
+    padding: 30px;
+}
+.mainText{
+    padding:50px;
+}
+.us{
+    background-image: url("../images/backgroundHeader.jpg");
+    background-clip: padding-box;
+    background-size: cover;
+    background-repeat: round;
+    min-height: 90vh;
+    padding-left: 100px;
+    padding-top: 100px;
+    padding-right: 100px;
+}
+.us ul li{
+    color: #1F3E72;
+}
+.us form{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 4px 4px 0px rgba(44, 76, 202, 0.2);
+    position: absolute;
+    bottom: -100px;
+    left: 100px;
+}
+.us form label{
+    color: #7f8ca1;
+    grid-row: 1;
+}
+.us form input{
+    color: #1F3E72;
+    font-weight: bolder;
+    grid-row: 2;
+    margin: 0 20px;
+}
+.us form .button{
+    color: white;
+    grid-row: 1/3;
+}
+section{
+    padding-top: 100px;
+    min-height: 60vh;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: round;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+.why .description{
+    padding-right: 600px;
+}
+.why ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-around;
+
+}
+.why li{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #7f8ca1;
+    border-radius: 5px;
+    margin: 30px;
+    padding: 20px;
+}
+.why li:hover{
+    box-shadow: 0px 10px 10px 10px rgba(44, 76, 202, 0.2);
 }
