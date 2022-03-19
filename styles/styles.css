@@ -1,5 +1,6 @@
 html{
     overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
 }
 body{
     margin: 0;
@@ -13,13 +14,20 @@ h3{
 p{
     color: #7f8ca1;
 }
+i{
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 20px;
+    color: #2C4CCA;
+    background-color: #F0F4FF;
+}
 .button{
     min-height: 40px;
     color: #FFFF;
     background-color: #2C4CCA;
     border: none;
     border-radius: 10px;
-    box-shadow: 0px 4px 4px 0px rgba(44, 76, 202, 0.2);
+    box-shadow: 0 4px 4px 0 rgba(44, 76, 202, 0.2);
 }
 main{
     background-image: url("../images/doctorHeader.jpg");
@@ -30,7 +38,7 @@ main{
 }
 .barHeader{
     position: sticky;
-    top: 0px;
+    top: 0;
     grid-column: 1/3;
     grid-row: 1;
     background-color: rgba(255, 255, 255, 0.9);
@@ -61,6 +69,19 @@ main{
 .mainText{
     padding:50px;
 }
+.mainText ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.mainText ul li i{
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    background-color: rgba(255,237,164,0.5);
+    box-shadow: 0 4px 4px 0 rgba(255, 227, 164, 0.3);
+    color: #FFD012;
+}
 .us{
     background-image: url("../images/backgroundHeader.jpg");
     background-clip: padding-box;
@@ -77,9 +98,10 @@ main{
 .us form{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    grid-row-gap: 10px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0px 4px 4px 0px rgba(44, 76, 202, 0.2);
+    box-shadow: 0 4px 4px 0 rgba(44, 76, 202, 0.2);
     position: absolute;
     bottom: -100px;
     left: 100px;
@@ -87,6 +109,10 @@ main{
 .us form label{
     color: #7f8ca1;
     grid-row: 1;
+}
+.us form label i{
+    font-size: 15px;
+    padding: 10px;
 }
 .us form input{
     color: #1F3E72;
@@ -125,8 +151,14 @@ main{
     margin: 30px;
     padding: 20px;
 }
-.why li:hover{
-    box-shadow: 0px 10px 10px 10px rgba(44, 76, 202, 0.2);
+.why ul li:hover{
+    box-shadow: 0 10px 10px 10px rgba(44, 76, 202, 0.2);
+}
+.why ul li:hover i{
+    border-style: solid;
+    border-width: 4px;
+    border-color: #FAFAFF;
+    border-radius: 5px;
 }
 .section.preparation{
     padding-left: 0;
@@ -164,8 +196,14 @@ main{
 .section.preparation ul li:hover p{
     display: block;
 }
+.section.preparation ul li:hover i{
+    border-style: solid;
+    border-width: 4px;
+    border-color: #FAFAFF;
+    border-radius: 5px;
+}
 .preparation ul li:hover{
-    box-shadow: 0px 5px 5px 0px rgba(44, 76, 202, 0.2);
+    box-shadow: 0 5px 5px 0 rgba(44, 76, 202, 0.2);
 }
 .section.preparation ul h3{
     color: #1F3E72;
@@ -185,7 +223,7 @@ main{
     display: block;
     width: 100%;
 }
-.section.emergency ul{
+.emergency ul{
     padding: 40px;
     list-style-type: none;
     display: grid;
@@ -193,15 +231,20 @@ main{
     grid-template-rows: repeat(2,1fr);
     gap: 10px;
 }
-.section.emergency ul li{
+.emergency ul li{
     border-style: solid;
     border-width: 4px;
     border-color: #FAFAFF;
     border-radius: 5px;
     padding: 5px;
 }
-.section.emergency ul li h3{
+.emergency ul li h3{
     color: #1F3E72;
+}
+.emergency .description ul li i{
+    align-self: center;
+    text-align: center;
+    margin: 20px 25px;
 }
 .emg {
     display: grid;
